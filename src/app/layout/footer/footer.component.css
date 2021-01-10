@@ -1,0 +1,167 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    color: #888;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #233844;;
+  }
+  
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+  
+  body > .container {
+    padding: 60px 15px 0;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  code {
+    font-size: 80%;
+  }
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    display: block;
+    bottom: 0;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.footer-container .footer-container-inner {
+    background: #2b414e;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.footer-container #footer h4 {
+    font: bold 16px/22px "Ubuntu",sans-serif;
+    color: #58bdab;
+    margin: 0 0 16px;
+}
+
+.footer-container #footer #social_block ul li {
+    float: left;
+    padding-right: 10px;
+}
+.footer-container #footer ul li {
+    padding-bottom: 8px;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.footer-container #footer ul li a{
+    color: #fff;
+}
+
+.footer-container #footer .footer-block {
+    margin-top: 55px;
+}
+
+.footer-container #footer #social_block h4 {
+    display: none;
+}
+
+.footer-container #footer #social_block ul li a {
+    display: block;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    background: #233844;
+}
+
+
+.footer-container #footer ul {
+    margin-bottom: 0;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+ol, ul {
+    list-style: none;
+}
+
+#footer #newsletter_block_left .form-group {
+    margin-bottom: 0;
+    position: relative;
+    padding-right: 60px;
+    border: none;
+    background: #233844;
+}
+
+#footer #newsletter_block_left .form-group .form-control {
+    height: 50px;
+    line-height: 28px;
+    border: none;
+    background: 0 0;
+    color: #fff;
+    padding: 9px 10px 10px 20px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#footer #newsletter_block_left .form-group .btn-sm:hover {
+    background: #3d9b8a;
+}
+#footer #newsletter_block_left .form-group .btn-sm {
+    position: absolute;
+    right: -1px;
+    top: 0;
+    border: none;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: #58bdab;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+}
+.btn.btn-default:hover, .btn.btn-default:active, .btn.btn-default:active:focus, .btn.btn-default:focus {
+    color: #58bdab;
+    background: 0 0;
+    border-color: #58bdab;
+    box-shadow: none;
+    outline: none;
+}
+.btn.btn-default {
+    white-space: normal;
+    text-align: left;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    font: bold 16px/24px "Ubuntu",sans-serif;
+        line-height: 24px;
+    border-width: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.toggle-footer-se {
+    padding: 0;
+}
