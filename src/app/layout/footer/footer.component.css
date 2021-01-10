@@ -10,7 +10,6 @@ html {
     color: #888;
   }
   .footer {
-    position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
@@ -38,7 +37,6 @@ html {
   }
 
 .footer-container {
-    position: absolute;
     bottom: 0;
     width: 100%;
     background: #fff;

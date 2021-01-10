@@ -3,16 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FeaturedCoursesComponent } from './components/featured-courses/featured-courses.component';
-import { FeaturedInstructorsComponent } from './components/featured-instructors/featured-instructors.component';
+import { FeaturedInstructorContainerComponent } from './components/featured-instructor-container/featured-instructor-container.component';
+import { FeaturedCourseContainerComponent } from './components/featured-course-container/featured-course-container.component';
+import { HeaderContainerComponent } from './components/header-container/header-container.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { InstructorModule } from '../instructor/instructor.module';
 
 
 @NgModule({
-  declarations: [HomePageComponent, HeaderComponent, FeaturedCoursesComponent, FeaturedInstructorsComponent],
+  declarations: [HomePageComponent, FeaturedInstructorContainerComponent, FeaturedCourseContainerComponent, HeaderContainerComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule,
+    InstructorModule
   ]
 })
 export class HomeModule { }

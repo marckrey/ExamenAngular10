@@ -8,6 +8,7 @@ import { InstructorContainerComponent } from './instructor-container/instructor-
   declarations: [InstructorContainerComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [InstructorContainerComponent]
 })
 export class InstructorModule { }
