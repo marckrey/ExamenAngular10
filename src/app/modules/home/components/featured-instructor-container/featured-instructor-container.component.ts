@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InstructorServiceService } from '../../../instructor/services/instructor-service.service';
+import { IInstructor } from '../../../instructor/interfaces/instructosInterface';
 
 @Component({
   selector: 'app-featured-instructor-container',
@@ -7,11 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturedInstructorContainerComponent implements OnInit {
 
-  listarInstructor: any[] = [];
+  listarInstructor: IInstructor[] = [];
 
-  constructor() { }
+  constructor(
+    private wsInstructorService: InstructorServiceService
+  ) { }
 
   ngOnInit(): void {
+    this.getInstructor();
   }
 
+  getInstructor(): void {
+    this.wsInstructorService.getInstructor()
+      .subscribe((data: IInstructor[]) => {
+        this.listarInstructor = data;
+      });
+    }
 }

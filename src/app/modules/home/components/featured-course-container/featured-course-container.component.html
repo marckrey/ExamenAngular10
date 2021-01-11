@@ -1,2 +1,8 @@
-<app-course [curso] = "listarCurso"></app-course>
-
+<span class="border">
+    <div style="text-align: center;">
+        <h1 class="display-3">CURSOS DESTACADOS</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-2">
+        <app-course *ngFor="let item of listarCurso" [curso]="item" [ifbutton]="1"></app-course>
+    </div>
+</span>

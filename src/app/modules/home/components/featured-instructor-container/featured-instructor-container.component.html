@@ -1,1 +1,9 @@
-<app-instructor-container></app-instructor-container>
+<span class="border">
+    <div style="text-align: center;">
+        <h1 class="display-3">INSTRUCTORES DESTACADOS</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-2">
+        <!-- <app-instructor-container *ngFor="let lst of listInstuctor" []="lst" [coverWitdh]="300"></app-instructor-container> -->
+        <app-instructor-container *ngFor="let item of listarInstructor" [instruc]="item"></app-instructor-container>
+    </div>
+</span>

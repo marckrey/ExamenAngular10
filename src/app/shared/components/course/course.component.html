@@ -1,1 +1,13 @@
-<p>course works!</p>
+<div class="col-9">
+    <div class="card">
+        <img src="{{ curso.image }}" class="card-img-top" alt="..." />
+        <div class="card-body">
+            <h5 class="card-title">{{ curso.language }}</h5>
+            <h5 class="card-title">{{ curso.name }}</h5>
+            <p class="card-text">
+                Precio: {{ curso.price }} $
+            </p>
+            <a *ngIf="ifbutton === 2" href="/cursos/{{ curso.id }}" class="btn btn-primary">Ver Detalle</a>
+        </div>
+    </div>
+</div>

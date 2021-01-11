@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ICurso } from '../../../../shared/interfaces/courseInterface';
+import { CourseServiceService } from '../../../course/services/course-service.service';
 
 @Component({
   selector: 'app-course-container',
@@ -7,11 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseContainerComponent implements OnInit {
 
-  listCurso: any[] = [];
+  listarCurso: ICurso[] = [];
 
-  constructor() { }
+  constructor(
+    private wsCursoService: CourseServiceService
+  ) { }
 
   ngOnInit(): void {
+    this.getCurso();
   }
 
+  getCurso(): void {
+    this.wsCursoService.getCurso()
+      .subscribe((data: ICurso[]) => {
+        this.listarCurso = data;
+      });
+    }
 }

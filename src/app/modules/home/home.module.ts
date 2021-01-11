@@ -8,6 +8,8 @@ import { FeaturedCourseContainerComponent } from './components/featured-course-c
 import { HeaderContainerComponent } from './components/header-container/header-container.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { InstructorModule } from '../instructor/instructor.module';
+import { InstructorServiceService } from '../instructor/services/instructor-service.service';
+import { CourseServiceService } from '../course/services/course-service.service';
 
 
 @NgModule({
@@ -17,6 +19,10 @@ import { InstructorModule } from '../instructor/instructor.module';
     HomeRoutingModule,
     SharedModule,
     InstructorModule
+  ],
+  providers: [
+    InstructorServiceService,
+    CourseServiceService
   ]
 })
 export class HomeModule { }

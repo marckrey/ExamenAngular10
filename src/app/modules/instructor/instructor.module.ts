@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InstructorContainerComponent } from './instructor-container/instructor-container.component';
-
+import { InstructorServiceService } from './services/instructor-service.service';
 
 
 @NgModule({
@@ -9,6 +9,7 @@ import { InstructorContainerComponent } from './instructor-container/instructor-
   imports: [
     CommonModule
   ],
+  providers: [InstructorServiceService],
   exports: [InstructorContainerComponent]
 })
 export class InstructorModule { }
